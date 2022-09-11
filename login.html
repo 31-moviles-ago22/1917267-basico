@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/loginStyle.css">
+</head>
+
+<body>
+    <header>
+        <div id="nav-belt">
+            <img id="logo" src="./images/logo.png" alt="logo">
+        </div>
+        <div id="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div class="card-25">
+                <h3>Inicia sesión</h3>
+                <form action="" id="iniciar-sesion">
+                    <label for="">Usuario</label>
+                    <input type="text" id="input-usuario" onkeyup="escribiendoUsuario()">
+
+                    <label for="">Contraseña</label>
+                    <input type="password" id="input-contra" onkeyup="escribiendoContra()">
+                </form>
+                <button id="login" onclick="imprimirConsola()">Iniciar sesión</button>
+                <a href="#">Olvidé mi contraseña</a>
+                <a href="">Registrarme</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Amazon Music</a></li>
+            <li><a href="#">Vende en Amazon</a></li>
+            <li><a href="#">Amazon Global</a></li>
+            <li><a href="#">Amazon Libros</a></li>
+        </ul>
+    </footer>
+</body>
+
+<script src="scripts/loginScript.js"></script>
+
+</html>

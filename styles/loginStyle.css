@@ -1,0 +1,17 @@
+#iniciar-sesion {
+    display:grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    grid-gap: 10px;
+    margin: 15px auto;
+}
+
+.card-25 > a {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: #268697;
+    font-size: 0.8em;
+}
