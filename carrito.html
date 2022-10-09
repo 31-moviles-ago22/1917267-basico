@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/carritoStyle.css">
+</head>
+
+<body>
+    <header>
+        <div id="nav-belt">
+            <img id="logo" src="./images/logo.png" alt="logo">
+        </div>
+        <div id="nav-bar">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="login.html">Iniciar sesión</a></li>
+                    <li><a href="carrito.html">Carrito</a></li>
+                    <li>
+                        <p id="carritoContador">0 elementos en el carrito</p>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="container">
+            <div id="carrito">
+                <h3>Carrito de compras</h3>
+                <div id="carritoContenido">
+                    <p id="carritoVacio">El carrito está vacío</p>
+                </div>
+            </div>
+            <div class="card-25">
+                <h3>Xiaomi Redmi 9A</h3>
+                <img src="images/celular1.webp" alt="Xiaomi Redmi 9A">
+                <p>$3119.13</p>
+                <button
+                    onclick="agregarCarrito({img: 'celular1.webp', name: 'Xiaomi Redmi 9A', price: '$3119.13'})">Agregar
+                    al carrito</button>
+            </div>
+            <div class="card-25">
+                <h3>Motorola G31</h3>
+                <img src="images/celular2.webp" alt="Motorola G31">
+                <p>$4090.98</p>
+                <button
+                    onclick="agregarCarrito({img: 'celular2.webp', name: 'Motorola G31', price: '$4090.98'})">Agregar
+                    al carrito</button>
+            </div>
+            <div class="card-25">
+                <h3>Samsung Galaxy A33</h3>
+                <img src="images/celular3.webp" alt="Samsung Galaxy A33">
+                <p>$7159.98</p>
+                <button
+                    onclick="agregarCarrito({img: 'celular3.webp', name: 'Samsung Galaxy A33', price: '$7159.98'})">Agregar
+                    al carrito</button>
+            </div>
+            <div class="card-25">
+                <h3>iPhone 12</h3>
+                <img src="images/celular4.webp" alt="iPhone 12">
+                <p>$16162.38</p>
+                <button onclick="agregarCarrito({img: 'celular4.webp', name: 'iPhone 12', price: '$16162.38'})">Agregar
+                    al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li><a href="#">Amazon Music</a></li>
+            <li><a href="#">Vende en Amazon</a></li>
+            <li><a href="#">Amazon Global</a></li>
+            <li><a href="#">Amazon Libros</a></li>
+        </ul>
+    </footer>
+
+    <script src="scripts/carritoScript.js"></script>
+</body>
+
+<script src="scripts/loginScript.js"></script>
+
+</html>

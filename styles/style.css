@@ -42,7 +42,7 @@ footer ul {
     padding-left: 20px;
     grid-gap: 10px;
     grid-auto-rows: auto; 
-    grid-template-columns: repeat(auto-fill, minmax(180px, 23%));
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
 footer li {
@@ -63,7 +63,8 @@ footer a {
     margin: 0 auto;
     grid-gap: 20px;
     grid-auto-rows: auto;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 23%));
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    max-width: 90%;
 }
 
 .buy {
@@ -83,6 +84,7 @@ footer a {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 
 .card-25 img {
@@ -135,50 +137,4 @@ footer a {
     padding: 5px;
     font-size: 16px;
     font-weight: 500;
-}
-
-/*Media Queries*/
-@media screen and (max-device-width: 380px) {
-
-    main #contenedor {
-        display: block;
-    }
-
-    main .tarjeta-25 {
-        display: block;
-
-        max-width: 100%;
-        margin: 25px 0;
-    }
-
-    main #login {
-        width: 100%;
-    }
-
-    main #contenedor {
-        margin-top: 25px;
-        margin-bottom: 25px;
-    }
-
-    h1 {
-        font-size: 25px;
-    }
-}
-
-@media screen and (max-device-width: 480px) {
-    footer ul li {
-        width: 100%;
-        max-width: initial;
-        margin: 10px 0;
-    }
-}
-
-@media screen and (min-device-width: 401px) and (max-device-width: 1024px) {
-    main #contenedor {
-        display: block;
-    }
-
-    main .tarjeta-25 {
-        max-width: 33%;
-    }
 }

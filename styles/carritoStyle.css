@@ -1,0 +1,44 @@
+#carrito {
+    grid-column: 1/-1;
+    background-color: #fff;
+}
+
+#carritoContador {
+    margin: 0;
+}
+
+#carritoContenido {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 10px;
+    margin: 4px 2rem;
+    justify-content: center;
+}
+
+.productoCarrito {
+    display: grid;
+    grid-template-columns: 3fr minmax(150px, 1fr);
+    grid-template-rows: 2fr 2fr 27px;
+    grid-gap: 5px;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    max-height: 200px;
+}
+
+.productoCarrito img {
+    max-height: 100%;
+    max-width: 100%;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    grid-column: 2;
+}
+
+.productoCarrito button {
+    grid-column: 1;
+    grid-column-end: span 2;
+}
+
+.productoCarrito p {
+    grid-column: 1;
+}
